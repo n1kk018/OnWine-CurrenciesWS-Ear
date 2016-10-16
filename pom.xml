@@ -9,20 +9,20 @@
       <java.version>1.8</java.version>
       <OnWine-CurrenciesWs.version>1.0</OnWine-CurrenciesWs.version>
       <OnWine-CurrenciesWs-Entity.artifactId>OnWine-CurrenciesWS-Entity</OnWine-CurrenciesWs-Entity.artifactId>
-      <OnWine-CurrenciesWs-Api.artifactId>OnWine-CurrenciesWS-Api</OnWine-CurrenciesWs-Api.artifactId>
-      <OnWine-CurrenciesWs-Impl.artifactId>OnWine-CurrenciesWS-Impl</OnWine-CurrenciesWs-Impl.artifactId>
+      <OnWine-CurrenciesWs-Biz.artifactId>OnWine-CurrenciesWS-Biz</OnWine-CurrenciesWs-Biz.artifactId>
+      <OnWine-CurrenciesWs-Dao.artifactId>OnWine-CurrenciesWS-Dao</OnWine-CurrenciesWs-Dao.artifactId>
       <OnWine-CurrenciesWs-Exception.artifactId>OnWine-CurrenciesWS-Exception</OnWine-CurrenciesWs-Exception.artifactId>
   </properties>
   <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>${OnWine-CurrenciesWs-Api.artifactId}</artifactId>
+            <artifactId>${OnWine-CurrenciesWs-Biz.artifactId}</artifactId>
             <version>${OnWine-CurrenciesWs.version}</version>
-            <type>jar</type>
+            <type>ejb</type>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>${OnWine-CurrenciesWs-Impl.artifactId}</artifactId>
+            <artifactId>${OnWine-CurrenciesWs-Dao.artifactId}</artifactId>
             <version>${OnWine-CurrenciesWs.version}</version>
             <type>ejb</type>
         </dependency>
@@ -55,15 +55,15 @@
                             <artifactId>${OnWine-CurrenciesWs-Exception.artifactId}</artifactId>
                             <bundleFileName>${OnWine-CurrenciesWs-Exception.artifactId}.jar</bundleFileName>
                         </ejbModule>
-                        <jarModule>
-                            <groupId>${project.groupId}</groupId>
-                            <artifactId>${OnWine-CurrenciesWs-Api.artifactId}</artifactId>
-                            <bundleFileName>${OnWine-CurrenciesWs-Api.artifactId}.jar</bundleFileName>
-                        </jarModule>
                         <ejbModule>
                             <groupId>${project.groupId}</groupId>
-                            <artifactId>${OnWine-CurrenciesWs-Impl.artifactId}</artifactId>
-                            <bundleFileName>${OnWine-CurrenciesWs-Impl.artifactId}.jar</bundleFileName>
+                            <artifactId>${OnWine-CurrenciesWs-Biz.artifactId}</artifactId>
+                            <bundleFileName>${OnWine-CurrenciesWs-Biz.artifactId}.jar</bundleFileName>
+                        </ejbModule>
+                        <ejbModule>
+                            <groupId>${project.groupId}</groupId>
+                            <artifactId>${OnWine-CurrenciesWs-Dao.artifactId}</artifactId>
+                            <bundleFileName>${OnWine-CurrenciesWs-Dao.artifactId}.jar</bundleFileName>
                         </ejbModule>
                         <ejbModule>
                             <groupId>${project.groupId}</groupId>
