@@ -8,7 +8,7 @@
       <plugin.compiler.version>3.5.1</plugin.compiler.version>
       <java.version>1.8</java.version>
       <OnWine-CurrenciesWs.version>1.0</OnWine-CurrenciesWs.version>
-      <OnWine-CurrenciesWs-Dummy.artifactId>OnWine-CurrenciesWS-Dummy</OnWine-CurrenciesWs-Dummy.artifactId>
+      <OnWine-CurrenciesWs-Web.artifactId>OnWine-CurrenciesWS-Web</OnWine-CurrenciesWs-Web.artifactId>
       <OnWine-CurrenciesWs-Entity.artifactId>OnWine-CurrenciesWS-Entity</OnWine-CurrenciesWs-Entity.artifactId>
       <OnWine-CurrenciesWs-Biz.artifactId>OnWine-CurrenciesWS-Biz</OnWine-CurrenciesWs-Biz.artifactId>
       <OnWine-CurrenciesWs-Dao.artifactId>OnWine-CurrenciesWS-Dao</OnWine-CurrenciesWs-Dao.artifactId>
@@ -17,7 +17,7 @@
   <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>${OnWine-CurrenciesWs-Dummy.artifactId}</artifactId>
+            <artifactId>${OnWine-CurrenciesWs-Web.artifactId}</artifactId>
             <version>${OnWine-CurrenciesWs.version}</version>
             <type>war</type>
         </dependency>
@@ -59,9 +59,9 @@
                     <modules>
                         <webModule>
                             <groupId>${project.groupId}</groupId>
-                            <artifactId>${OnWine-CurrenciesWs-Dummy.artifactId}</artifactId>
-                            <contextRoot>${OnWine-CurrenciesWs-Dummy.artifactId}</contextRoot>
-                            <bundleFileName>${OnWine-CurrenciesWs-Dummy.artifactId}.war</bundleFileName>
+                            <artifactId>${OnWine-CurrenciesWs-Web.artifactId}</artifactId>
+                            <contextRoot>${OnWine-CurrenciesWs-Web.artifactId}</contextRoot>
+                            <bundleFileName>${OnWine-CurrenciesWs-Web.artifactId}.war</bundleFileName>
                         </webModule>
                         <ejbModule>
                             <groupId>${project.groupId}</groupId>
